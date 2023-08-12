@@ -12,8 +12,6 @@ export class CourseListComponent implements OnInit, OnDestroy {
     this.courseList = courses;
   }
 
-  getCourseDetails(course: Course): void {
-    
-  }
+  getCourseDetails(course?: Course): void {}
   ngOnDestroy(): void {}
 }
