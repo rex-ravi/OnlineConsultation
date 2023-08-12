@@ -1,0 +1,12 @@
+<h2>Courses Offered</h2>
+<div class="course-list-style" *ngFor="let course of courseList">
+  <div>
+    <div>
+      <div>{{course.name}}</div>
+      <div>{{course.university.name}}</div>
+    </div>
+    <div>
+      <button class="btn-style" (click)=getCourseDetails()>Apply</button>
+    </div>
+  </div>
+</div>

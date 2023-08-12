@@ -17,7 +17,7 @@ body {
   flex-direction: row;
 }
 
-router-outlet + *  {
+router-outlet + * {
   padding: 0 16px;
 }
 
@@ -31,7 +31,8 @@ h2 {
   font-size: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: lighter;
 }
 
@@ -58,7 +59,7 @@ input {
   border-radius: 2px;
   padding: 8px;
   margin-bottom: 16px;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
 }
 
 label {
@@ -70,7 +71,8 @@ label {
 }
 
 /* Button */
-.button, button {
+.button,
+button {
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
@@ -82,12 +84,14 @@ label {
   border: none;
 }
 
-.button:hover, button:hover {
+.button:hover,
+button:hover {
   opacity: 0.8;
   font-weight: normal;
 }
 
-.button:disabled, button:disabled {
+.button:disabled,
+button:disabled {
   opacity: 0.5;
   cursor: auto;
 }
@@ -124,7 +128,8 @@ app-top-bar h1 {
 
 /* Checkout Cart, Shipping Prices */
 
-.cart-item, .shipping-item {
+.cart-item,
+.shipping-item {
   width: 100%;
   min-width: 400px;
   max-width: 450px;
@@ -134,12 +139,64 @@ app-top-bar h1 {
   padding: 16px 32px;
   margin-bottom: 8px;
   border-radius: 2px;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
+.style-mt-4 {
+  margin-top: 12px;
+}
+.style-mt-6 {
+  margin-top: 24px;
+}
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+.style-mb-4 {
+  margin-bottom: 12px;
+}
+.style-mb-6 {
+  margin-top: 24px;
+}
+
+.style-ml-3 {
+  margin-left: 6px;
+}
+
+.style-ml-4 {
+  margin-left: 12px;
+}
+.style-ml-6 {
+  margin-left: 24px;
+}
+
+.style-mr-4 {
+  margin-right: 12px;
+}
+.style-mr-6 {
+  margin-right: 24px;
+}
+
+.style-my-4 {
+  margin: 12px 0px 12px 0px;
+}
+
+.style-my-6 {
+  margin: 24px 0px 24px 0px;
+}
+
+.style-mx-4 {
+  margin: 0px 12px 0px 12px;
+}
+
+.style-mx-6 {
+  margin: 0px 24px 0px 24px;
+}
+
+.input-style {
+  border: solid 1px;
+  border-radius: 8px;
+  margin-right: 4px;
+  display: inline-block;
+}
+
+.btn-style {
+  border-radius: 8px;
+}
