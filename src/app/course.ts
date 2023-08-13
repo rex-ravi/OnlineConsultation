@@ -3,9 +3,9 @@ import { University } from './university';
 export interface Course {
   id: number;
   name: string;
-  minIELTSScoreNeeded?: number;
-  duration?: number;
-  fee?: number;
+  minIELTSScoreNeeded: number;
+  duration: number;
+  fee: number;
   university: University;
 }
 

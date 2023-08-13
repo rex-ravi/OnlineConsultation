@@ -1,7 +1,7 @@
 <div *ngIf="showCourseList">
-  <app-filter-course></app-filter-course>
+  <app-filter-course (filterEvent)="filterEventHandler($event)"></app-filter-course>
 
-  <app-course-list
+  <app-course-list [filterModel]=filterModel
     (courseSelectEvent)="courseSelectEventHandler($event)"
   ></app-course-list>
 </div>

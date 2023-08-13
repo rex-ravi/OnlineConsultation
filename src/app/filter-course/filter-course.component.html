@@ -1,10 +1,10 @@
-<div class="style-my-6">
-  <form>
-    <input class="input-style" type="text" placeholder="Search" />
-    <input class="input-style" type="number" placeholder="IELTS Score" />
-    <input class="input-style" type="text" placeholder="Fee in USD" />
-    <input class="input-style" type="text" placeholder="Interested Subjects" />
-    <button class="primary btn-style" type="button" (click)="onFilter()">
+<div>
+  <form [formGroup]="filterForm" (ngSubmit)="onFilter()">
+    <input class="input-style" formControlName="search" type="text" placeholder="Search" />
+    <input class="input-style" formControlName="ieltsScore" type="number" placeholder="IELTS Score" />
+    <input class="input-style" formControlName="fee" type="text" placeholder="Fee in USD" />
+    <input class="input-style" formControlName="interestedSubjects" type="text" placeholder="Interested Subjects" />
+    <button class="primary btn-style" type="submit" (click)="onFilter()">
       Filter
     </button>
   </form>

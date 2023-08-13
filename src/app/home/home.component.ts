@@ -1,5 +1,6 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { Course } from '../course';
+import { FilterModel } from '../filter-model';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,7 @@ export class HomeComponent {
   selectedCourse: any;
   showCourseList = true;
   showCourseDetail = false;
+  filterModel: any;
 
   courseSelectEventHandler(course: Course) {
     this.selectedCourse = course;
@@ -20,5 +22,9 @@ export class HomeComponent {
   backEventHandler(): void {
     this.showCourseDetail = false;
     this.showCourseList = true;
+  }
+
+  filterEventHandler(filterModel: FilterModel): void {
+    this.filterModel = filterModel;
   }
 }

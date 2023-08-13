@@ -16,13 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    ReactiveFormsModule,
-    FormsModule,
-    AppRoutingModule,
-    RouterModule.forRoot([{ path: '', component: HomeComponent }]),
-  ],
+  imports: [BrowserModule, ReactiveFormsModule, FormsModule, AppRoutingModule],
   declarations: [
     AppComponent,
     TopBarComponent,

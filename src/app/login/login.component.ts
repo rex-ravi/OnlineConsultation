@@ -38,5 +38,9 @@ export class LoginComponent implements OnInit {
     }
 
     this.loading = true;
+
+    setTimeout(() => {
+      this.router.navigate(['../'], { relativeTo: this.route });
+    }, 5000);
   }
 }
