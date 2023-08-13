@@ -10,12 +10,17 @@ import { UniversityListComponent } from './university-list/university-list.compo
 import { HomeComponent } from './home/home.component';
 import { CourseListComponent } from './course-list/course-list.component';
 import { FilterCourseComponent } from './filter-course/filter-course.component';
+import { CourseDetailComponent } from './course-detail/course-detail.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { LoginComponent } from './login/login.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
+    AppRoutingModule,
     RouterModule.forRoot([{ path: '', component: HomeComponent }]),
   ],
   declarations: [
@@ -26,6 +31,9 @@ import { FilterCourseComponent } from './filter-course/filter-course.component';
     HomeComponent,
     CourseListComponent,
     FilterCourseComponent,
+    CourseDetailComponent,
+    RegistrationComponent,
+    LoginComponent,
   ],
   bootstrap: [AppComponent],
 })

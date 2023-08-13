@@ -1,0 +1,31 @@
+<h2 class="style-mt-6">Course Detail</h2>
+<hr />
+<div>
+  <table style="border: none, col-padding:20px">
+    <tr>
+      <td class="font-700">Course Name</td>
+      <td>{{ course.name }}</td>
+    </tr>
+    <tr>
+      <td class="font-700">Course Duration</td>
+      <td>{{ course.duration }} yr</td>
+    </tr>
+    <tr>
+      <td class="font-700">Annual Course Fee</td>
+      <td>{{ course.fee | currency }}</td>
+    </tr>
+    <tr>
+      <td class="font-700">University Name</td>
+      <td>{{ course.university.name }}</td>
+    </tr>
+    <tr>
+      <td class="font-700">University Website</td>
+      <td>
+        <a href="{{ course.university.website }}">{{
+          course.university.website
+        }}</a>
+      </td>
+    </tr>
+  </table>
+  <button class="btn-style style-ml-4" (click)="onBack()">Back</button>
+</div>

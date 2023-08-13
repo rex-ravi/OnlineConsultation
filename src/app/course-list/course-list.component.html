@@ -2,11 +2,15 @@
 <div class="course-list-style" *ngFor="let course of courseList">
   <div>
     <div>
-      <div>{{course.name}}</div>
-      <div>{{course.university.name}}</div>
+      <div style="font-weight: 900; font-size: 20px">{{ course.name }}</div>
+      <div style="font-weight: 600; font-size: 16px">
+        {{ course.university.name }}
+      </div>
     </div>
     <div>
-      <button class="btn-style" (click)=getCourseDetails()>Apply</button>
+      <button class="btn-style" (click)="getCourseDetails(course)">
+        Apply
+      </button>
     </div>
   </div>
 </div>

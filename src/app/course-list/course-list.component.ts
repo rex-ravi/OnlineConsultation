@@ -1,4 +1,10 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Output,
+  OnInit,
+  OnDestroy,
+} from '@angular/core';
 import { Course, courses } from '../course';
 
 @Component({
@@ -8,10 +14,15 @@ import { Course, courses } from '../course';
 })
 export class CourseListComponent implements OnInit, OnDestroy {
   courseList: Course[] = [];
+  showCourseDetail = false;
+  @Output()
+  courseSelectEvent: EventEmitter<Course> = new EventEmitter();
   ngOnInit(): void {
     this.courseList = courses;
   }
 
-  getCourseDetails(course?: Course): void {}
+  getCourseDetails(course?: Course): void {
+    this.courseSelectEvent.emit(course);
+  }
   ngOnDestroy(): void {}
 }
